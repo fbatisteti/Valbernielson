@@ -1,0 +1,54 @@
+=== OBSERVAÇÕES E ERROS CONHECIDOS===
+
+=== Observações ===
+
+GERAL
+- Quase não há verificação de entradas de dados, para garantir que não ocorrerá um erro fatal e que todas as variáveis
+  estão com seus devidos tipos
+
+"BANCO DE DADOS"
+- Tentei estudar MySQL por conta para fazer toda esta operação com um banco de dados, mas eu não teria tempo hábil para
+  realizar a entrega. Portanto, fiz com dicionários codificados em binário (extensão .bin)
+
+UI
+- Não sei trabalhar com interfaces gráficas ainda, então o programa fica com visual clássico de 1990: fundo preto com
+  letra branca, direto do terminal
+
+OPCIONAIS
+- O único opcional que acredito não ter atingido é o controle semanal de desempenho. Ele pode ocorrer caso seja feito
+  uma busca de todos os pedidos no período definido de uma semana, e depois buscar pedido a pedido
+
+NOVA FUNCIONALIDADE
+- Sugiro colocar um balanço das vendas em um determinado período, somando todos os itens em um único relatório. Assim,
+  é possível identificar quais tiveram mais saída, ou menos saída, e, com base em seus ingredientes, ajustar melhor as
+  compras futuras a fim de evitar perdas e gastos desnecessários
+
+LINGUAGEM E PROGRAMAS UTILIZADOS
+- A linguagem utilizada foi PYTHON 3.7, escrito no programa HETBRAINS PYCHARM COMMUNITY EDITION
+
+BIBLIOTECAS E DEPENDÊNCIAS
+- As duas bibliotecas importadas, PICKLE e DATETIME, já vêm junto dos arquivos do python quando instalados. Não há
+  necessidade de se instalar nada para rodar o programa
+
+LIMITAÇÕES DE USUÁRIO
+- Era minha intenção criar uma chave que mudaria as permissões para "cliente" e "administrador", com o cliente tendo acesso
+  bem limitado às funções gerais do programa. Todas as funções seriam, e estão, habilitadas para o administrador, que é
+  o programa como está agora.
+
+
+=== Erros ===
+
+FUNÇÃO DE CARDÁPIO
+- Após remover um item do cardápio, quando se pede para mostrar a lista de lanches os nomes dos itens desaparecem
+--- Após o erro acima, e depois de incluir um novo item, não é mais possível mostrar o cardápio sem dar erro fatal
+
+FUNÇÃO DE PEDIDOS
+- A função de alterar pedidos reconhece caso seja solicitado o pedido de ID 0
+-- Embora não seja possível alterar o pedido de ID 0, é possível cancelar o pedido, mesmo ele já estando cancelado
+
+- A função de atualizar o status do pedido (aguardando, preparando, entregando, entregue) reconhece e dá prosseguimento
+  caso seja solicitado o pedido de ID 0 (apresenta que já está cancelado)
+
+APRESENTAÇÃO
+- O alinhamento das tabelas não está aparecendo devidamente em alguns casos
+
